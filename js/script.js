@@ -1,17 +1,22 @@
-let mobileNumber = document.getElementById("mobileNumber")
-let mobilePin = document.getElementById("mobilePin")
-let loginBtn = document.getElementById("loginBtn")
+let mobileNumber = document.getElementById("mobileNumber");
+let mobilePin = document.getElementById("mobilePin");
+let loginBtn = document.getElementById("loginBtn");
 
-loginBtn.addEventListener("click", ()=>{
+loginBtn.addEventListener("click", () => {
+
+
+  let nmbrValue = mobileNumber.value;
+  let pinValue = mobilePin.value;
+
+  mobileNumber.value = ""
+  mobilePin.value = ""
+  
+
+  if (nmbrValue == "01625419860" && pinValue == 2222) {
+    window.location.href = "./home.html";
+    console.log("kire kire");
     
-    let NmbrValue = mobileNumber.value 
-    let PinValue = mobilePin.value 
-    if (NmbrValue == "01625419860" && PinValue == 2222) {
-        window.location.href="./home.html"
-        
-    }
-    else{
-        alert("oi kireee.. vul hoise")
-    }
-    
-})
+  } else {
+    alert("oi kireee.. vul hoise");
+  }
+});

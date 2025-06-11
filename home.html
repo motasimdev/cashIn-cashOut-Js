@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>add / withdraw money</title>
+    <title>add / withdraw money class 37-38</title>
     <link rel="stylesheet" href="src/output.css">
 </head>
 
@@ -16,7 +16,30 @@
                 <div class="mockup-phone-camera"></div>
                 <div class="mockup-phone-display grid place-content-center">
                     <!-- ============Content Area================= -->
-                    
+                    <div class="stats shadow">
+                        <div class="stat">
+                            <div class="stat-value text-white text-center">100</div>
+                            <div class="stat-title text-white text-center text-3xl">Total Balane</div>
+                        </div>
+                    </div>
+                    <div class="flex w-full">
+                        <div class="card bg-base-300 rounded-box grid h-5 grow place-items-center"></div>
+                    </div>
+                    <div class="flex mt-5 justify-between">
+                        <button class="btn btn-soft btn-primary">Add Money</button>
+                    <button class="btn btn-soft btn-secondary">Cash Out</button>
+                    </div>
+
+                    <fieldset class="fieldset">
+                        <legend class="fieldset-legend text-white">Amount</legend>
+                        <input id="inputAmount" type="text" class="input" placeholder="Enter Your Amount" />
+
+                        <legend class="fieldset-legend text-white">4 Digit Pin</legend>
+                        <input id="addMoneyPin" type="text" class="input" placeholder="Enter Your Pin" />
+
+                        <button id="addMoneyBtn" class="btn btn-secondary">Add Money</button>
+
+                    </fieldset>
                     <!-- =============Content Area================ -->
                 </div>
             </div>
@@ -24,7 +47,7 @@
     </div>
 
 
-    <script src="js/script.js"></script>
+    <script src="js/home.js"></script>
 </body>
 
 </html>
