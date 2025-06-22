@@ -10,5 +10,3 @@ addMoneyBtn.addEventListener("click", ()=> {
         alert("pin vul")
     }
 })
-
-====
